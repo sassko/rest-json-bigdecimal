@@ -1,6 +1,5 @@
 package com.example;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 import java.math.BigDecimal;
@@ -8,7 +7,6 @@ import java.math.BigDecimal;
 @RegisterForReflection
 public class Fruit {
 
-    @JsonProperty("preis")
     BigDecimal price;
 
     public Fruit() { }
